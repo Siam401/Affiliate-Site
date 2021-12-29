@@ -93,7 +93,7 @@ $(function () {
         serverSide: true,
         ajax: "{{ route('dashboard') }}",
         columns: [
-            {data: 'id', name: 'id'},
+            {data: 'DT_RowIndex', name: 'id'},
             {data: 'name', name: 'name'},
             {data: 'email', name: 'email'},
             {data: 'password', name: 'password'},
