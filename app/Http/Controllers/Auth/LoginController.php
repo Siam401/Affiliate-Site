@@ -48,18 +48,22 @@ class LoginController extends Controller
         $user = DB::table('users')->where('email', $request->email)
             ->where('password', $request->password)
             ->first();
-        // dd($user);
 
         if ($user == null) {
             return redirect('/login');
         } else {
+            Session::put('id', $user->id);
             Session::put('name', $user->name);
             Session::put('email', $user->email);
             Session::put('password', $user->password);
             Session::put('role', $user->role);
             Session::put('affiliate_id', $user->affiliate_id);
 
-            return redirect('/dashboard');
+            if ($user->role == 0) {
+                return redirect()->route('dashboard');
+            } else {
+                return redirect()->route('UserList');
+            }
         }
     }
 

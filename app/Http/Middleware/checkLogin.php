@@ -17,6 +17,7 @@ class checkLogin
      */
     public function handle(Request $request, Closure $next)
     {
+        // dd(Session::has('name'));
         if (Session::has('name')) {
             return $next($request);
         } else {

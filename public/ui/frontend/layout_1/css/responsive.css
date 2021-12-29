@@ -1,0 +1,221 @@
+/*		Default Layout: 960px. 
+		Gutters: 24px.
+		Outer margins: 48px.
+		Leftover space for scrollbars @1024px: 32px.
+-------------------------------------------------------------------------------
+cols    1     2      3      4      5      6      7      8      9      10
+px      68    160    252    344    436    528    620    712    804    896    */
+
+
+
+    
+
+
+
+
+/*		Tablet Layout: 768px.
+		Gutters: 24px.
+		Outer margins: 28px.
+		Inherits styles from: Default Layout.
+-----------------------------------------------------------------
+cols    1     2      3      4      5      6      7      8
+px      68    160    252    344    436    528    620    712    */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	
+    .container{
+        width: 96%;
+    }
+    .header .logo{
+        width: 31%;
+        padding-right: 0;
+    }
+    .header .heading{
+        width: 29%;
+        margin-top: 0;
+        padding-right: 0;
+        padding: 0.9375%;
+    }
+    .header .heading h5{
+        display: block;
+    }
+    .header .post_btn{
+        width: 36%;
+    }
+    .footer .copyright{
+        width: 31.25%;
+    }
+    .footer .menu{
+        width: 68.75%;
+    }
+
+}
+
+
+
+/*		Mobile Layout: 320px.
+		Gutters: 24px.
+		Outer margins: 34px.
+		Inherits styles from: Default Layout.
+---------------------------------------------
+cols    1     2      3
+px      68    160    252    */
+
+@media only screen and (max-width: 767px) {
+	
+	
+    .container{
+        width: 90%;
+    }
+    .header .logo{
+        width: 100%;
+        font-size: 1rem;
+        display: block;
+        float: none;
+        padding: 0;
+        margin-top: .8rem;
+        text-align: center !important;
+    }
+    .header .heading{
+        width: 100%;
+        display: block;
+        float: none;
+        font-size: 1.125rem;
+        padding: 0;
+        margin: 0;
+        text-align: center !important;
+    }
+    .header .heading h5{
+        font-size: 1rem;
+    }
+    .header .post_btn{
+        width: 100%;
+        float: none;
+        display: flex;
+        justify-content: center;
+        text-align: center !important;
+        margin-bottom: .5rem;
+    }
+    .header .post_btn a{
+        margin-top: .5rem;
+        padding: .7rem 10%;
+        font-size: .9rem;
+    }
+    .login_header{
+        margin-left: 1%;
+    }
+    .login_form h1{
+        font-size: 1.25rem;
+    }
+    .login_form .form{
+        float: none;
+        display: block;
+        width: 100%;
+    }
+    .login_form .right_content{
+        float: none;
+        display: block;
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 2.7rem;
+    }
+    .footer .copyright{
+        width: 31%;
+        margin-right: 9%;
+    }
+    .footer .menu{
+        width: 60%;
+    }
+    .form .reg_btn{
+        display: block;
+    }
+	
+}
+
+
+
+/*		Wide Mobile Layout: 480px.
+		Gutters: 24px.
+		Outer margins: 22px.
+		Inherits styles from: Default Layout, Mobile Layout.
+------------------------------------------------------------
+cols    1     2      3      4      5
+px      68    160    252    344    436    */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	
+	
+    .container{
+        width: 96%;
+    }
+    .header .logo{
+        width: 100%;
+        display: block;
+        float: none;
+        padding: 0;
+        margin-top: .8rem;
+        text-align: center !important;
+    }
+    .header .heading{
+        width: 100%;
+        display: block;
+        float: none;
+        padding: 0;
+        margin: 0;
+        text-align: center !important;
+    }
+    .header .post_btn{
+        width: 100%;
+        float: none;
+        display: flex;
+        justify-content: center;
+        text-align: center !important;
+        margin-bottom: .5rem;
+    }
+    .header .post_btn a{
+        margin-top: .5rem;
+        padding: .7rem 22%;
+    }
+    .login_form h1{
+        font-size: 1.25rem;
+    }
+    .login_form .form{
+        float: none;
+        display: block;
+        width: 100%;
+    }
+    .login_form .right_content{
+        float: none;
+        display: block;
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 2.7rem;
+    }
+    .footer .copyright{
+        width: 31%;
+        margin-right: 9%;
+    }
+    .footer .menu{
+        width: 60%;
+    }
+    
+
+}
+
+
+/*	Retina media query.
+	Overrides styles for devices with a 
+	device-pixel-ratio of 2+, such as iPhone 4.
+-----------------------------------------------    */
+
+@media 
+	only screen and (-webkit-min-device-pixel-ratio: 2),
+	only screen and (min-device-pixel-ratio: 2) {
+	
+	
+        
+        
+        
+        
+	
+}
